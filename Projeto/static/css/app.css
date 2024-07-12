@@ -1,0 +1,14 @@
+body{
+    background-image: url('https://images.wallpaperscraft.com/image/single/rain_drops_water_84006_1920x1080.jpg');
+    background: repeat 1;
+    font-family: 'Chakra Petch', sans-serif;
+    background-size: cover;
+    color: rgb(0, 64, 201);
+    margin-top: 200px;
+    font-size: 18px;
+}
+h2{
+    color: rgb(0, 255, 179);
+    text-align: center;
+    font-size: 30px;
+}
