@@ -1,12 +1,14 @@
 from flask import Blueprint, render_template, request
 from database.cliente import CLIENTES
+from database.models import cliente
 
 cliente_route = Blueprint('cliente', __name__)
 
 @cliente_route.route('/')
 def lista_clientes():
     """ listar os clientes """
-    return render_template('lista_clientes.html', clientes=CLIENTES)
+    clientes=cliente.select()
+    return render_template('lista_clientes.html', clientes=clientes)
     
 
 @cliente_route.route('/', methods=['POST'])
